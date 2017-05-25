@@ -1,0 +1,297 @@
+<html>
+
+    <head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>temp</title>
+
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+
+	<link href="./css/course_homepage_layout.css" rel="stylesheet" type="text/css">
+
+	<link href="./css/sea_wolf.css" rel="stylesheet" type="text/css">
+
+        <!-- LINK TO OUR JavaScript FILE AND JQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="./js/BannerBuilder.js"></script>
+        <script src="./js/FooterBuilder.js"></script>
+        <script src="./js/OfficeHoursGridBuilder.js"></script>
+        <script src="./js/RecitationsBuilder.js"></script>
+
+        <!-- ONCE THE PAGE FULLY LOADS INITIALIZE THE SLIDESHOW -->
+        <script>
+            $(document).ready()
+            {
+                buildOfficeHoursGrid();
+                buildRecitations();
+            }
+            window.on;
+        </script>
+
+	<style>
+	    .rec_0 {
+		background-color:rgb(255,204,153);
+		border: 5px solid white;
+		border-radius: 25px;
+		box-shadow: 5px 5px 5px #888888;
+	    }
+	    .rec_1 {
+		background-color:rgb(229, 204, 255);
+		border: 5px solid white;
+		border-radius: 25px;
+		box-shadow: 5px 5px 5px #888888;
+	    }
+	    .rec_cell {
+		padding: 10px 5px 10px 5px;
+	    }
+	    .ta_cell {
+		padding: 5px 5px 10px 15px;
+	    }
+	    .ta_name {
+		font-size:14pt;
+		color: black;
+	    }
+	    .ta_email {
+		font-size:10pt;
+		color: rgb(0,0,80);
+	    }
+	</style>
+    </head>
+
+
+
+    <body>
+
+	<div id="content">
+
+	    <div id="navbar">
+
+                <!-- NAVIGATION LINKS GO HERE -->
+	    </div>
+
+
+	    <div id="banner"></div>
+
+      <div id="desc">
+
+		<h3>COURSE DESCRIPTION</h3>
+
+		<p>Introduces the basic concepts and the modern tools and techniques of Software Engineering. Emphasizes the development of reliable and maintainable software via system requirements and specifications; software design methodologies including object-oriented design, implementation, integration, and testing; software project management; life-cycle documentation; software maintenance; and consideration of human factor issues.<br /><br /><br /></p>
+
+
+		<h3>COURSE TOPICS</h3>
+
+		<ul>
+		    <li>Waterfall model, together with its variations and improvements</li>
+		    <li>The UML (Unified Modeling Language)</li>
+		    <li>Requirements Analysis</li>
+		    <li>Use Case Modeling</li>
+		    <li>Object Modeling</li>
+		    <li>Functional Modeling</li>
+		    <li>Dynamic Modeling using State Diagrams, Sequence Diagrams, and Activity Diagrams</li>
+		    <li>Specification Documents</li>
+		    <li>Design Documents</li>
+		    <li>Testing -- Black Box, Glass Box</li>
+		    <li>Test Plan Documents</li>
+		    <li>Project Planning -- Pert Charts, Gantt Charts</li>
+		    <li>Software Engineering tools</li>
+		    <li>Oral and Written Communication<br /><br /><br /></li>
+		</ul>
+
+
+		<h3>PREREQUISITES</h3>
+
+		<p>C or higher: CSE 219 or CSE 260; CSE 320; CSE 305 or CSE 306; U4 standing; CSE major.<br /><br /><br /></p>
+
+
+		<h3>COURSE GOALS</h3>
+
+		<p>At the end of the course you should have the following knowledge and skills:</p>
+		<ul>
+		    <li>An ability to perform project planning, requirements analysis, and system/test design.</li>
+		    <li>An ability to work as a team to produce software systems that meet specifications while satisfying an implementation schedule.</li>
+		    <li>An ability to produce professional quality oral/written presentations of system designs, reviews, and project demonstrations.</li>
+		    <li>An understanding of ethical issues in software design and computing.<br /><br /><br /></li>
+		</ul>
+
+
+		<h3>LECTURE</h3>
+		<p>Tuesdays &amp; Thursdays<br />
+		    2:30pm - 4:00pm<br />
+		    Javits 101<br /><br /><br />
+		</p>
+                <br />
+                <br />
+
+		<div id="custom_syllabus_content">
+
+	    <h3 class="ta_office_hours">Teaching Assistants</h3>
+            <br />
+            <table>
+                <tbody id="undergrad_tas">
+
+                </tbody>
+            </table>
+
+
+	    <h3 id="office_hours_grid">OFFICE HOURS GRID</h3>
+                <table class="office_hours_schedule" cellspacing="0" border="1">
+                    <tbody id="office_hours_table">
+                        <tr>
+                            <th class="sch" width="150px">Start Time</th>
+                            <th class="sch" width="150px">End Time</th>
+                            <th class="sch" width="200px">MONDAY</th>
+                            <th class="sch" width="200px">TUESDAY</th>
+                            <th class="sch" width="200px">WEDNESDAY</th>
+                            <th class="sch" width="200px">THURSDAY</th>
+                            <th class="sch" width="200px">FRIDAY</th>
+                        </tr>
+                    </tbody>
+                </table>
+	    <br />
+	    <br />
+
+	    <h3 id="recitations">RECITATIONS</h3>
+
+            <table>
+                <tbody id="rec_table">
+                    <!-- THIS WILL BE GENERATED BY JavaScript-->
+                </tbody>
+            </table>
+	    <br /><br />
+
+
+	    <p><br /></p>
+
+
+	    <hr />
+		</div>
+
+		<br>
+    <h3>COURSE PLATFORMS</h3>
+
+		<p>All teams will use the Java Programming language and <a href="https://developers.google.com/appengine/">Google App Engine</a> and related technologies for creating our Web apps. Note that teams will have some choice regarding front-end libraries, but for the most part we'll be using Servlets and JSPs along with JSTL and EL. As far as the development platform is concerned, teams have three choices:</p>
+		<ul>
+		    <li><a href="https://maven.apache.org/">Apache Maven</a> and the text editor of your choice.</li>
+		    <li><a href="https://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunasr2">Eclipse for Java EE Developers</a> in cooperation with the <a href="https://developers.google.com/eclipse/docs/install-eclipse-4.4">Google App Engine eclipse Plugin</a>. Note that one should match the plugin with the version of eclipse. Above, both the IDE and the plugin are for Luna (4.4).</li>
+		    <li><a href="https://www.jetbrains.com/idea/">JetBrains' IntelliJ IDEA</a> is a great IDE ready made for building Google App Engine apps. Temporary academic licenses are available for free.</li>
+		</ul>
+
+		<p>In addition to these tools, we'll use tools for Project Management and UML Modeling which will be discussed as the semester progresses.<br /><br /></p>
+
+	    <h3>TEXTBOOK</h3>
+
+	    <p><a href="http://ae-book.appspot.com/code#Example_Code"><img style="float:left; margin-right:3em" width="100" height="125" src="./images/GoogleAppEngineJava.png" alt="Programming Google App Engine with Java" /></a><a href="http://ae-book.appspot.com/code#Example_Code"><em>Programming Google App Engine with Java</em></a><br />
+		by <strong>Dan Sanderson</strong><br />
+		Published by O'Reilly Media, Inc. 2016<br />
+		Print ISBN 1-4919-0020-2<br /></p>
+
+	    <p><br clear="all" /><br /></p>
+	    <h3>ONLINE TEXTBOOKS</h3>
+
+	    <p><a href="http://proquestcombo.safaribooksonline.com.proxy.library.stonybrook.edu/book/web-development/jsp/0596005725?bookview=overview"><img style="float:left; margin-right:3em" width="100" height="125" src="./images/JavaServletAndJSPCookbook.png" alt="Java Servlet &amp; JSP Cookbook" /></a><a href="http://proquestcombo.safaribooksonline.com.proxy.library.stonybrook.edu/book/web-development/jsp/0596005725?bookview=overview"><em>Java Servlet &amp; JSP Cookbook</em></a><br />
+		by <strong>Bruce W. Perry</strong><br />
+		Published by O'Reilly Media, Inc. 2004<br />
+		Print ISBN-13: 978-0-596-00572-6<br /></p>
+
+	    <p><br clear="all" /><br /><strong>AND</strong></p>
+
+	    <p><a href="http://proquestcombo.safaribooksonline.com.proxy.library.stonybrook.edu/0596008678"><img style="float:left; margin-right:3em" width="100" height="125" src="./images/HeadFirstOOAAD.jpg" alt="Head First Object Oriented Analysis and Design" /></a><a href="http://proquestcombo.safaribooksonline.com.proxy.library.stonybrook.edu/0596008678"><em>Head First Object Oriented Design and Analysis</em></a><br />
+		by <strong>Brett McLaughlin</strong>, <strong>Gary Pollice</strong>, <strong>David West</strong><br />
+		Published by O'Reilly Media, Inc. 2006<br />
+		Print ISBN-10: 0-596-00867-8<br />
+		Print ISBN-13: 978-0-596-00867-3<br /></p>
+
+	    <p><br clear="all" /><br /><strong>AND</strong></p>
+
+	    <p><a href="http://proquestcombo.safaribooksonline.com.proxy.library.stonybrook.edu/0596007124"><img style="float:left; margin-right:3em" width="100" height="125" src="./images/HeadFirstDesignPatterns.gif" alt="Head First Design Patterns" /></a><a href="http://proquestcombo.safaribooksonline.com.proxy.library.stonybrook.edu/0596007124"><em>Head First Design Patterns</em></a><br />
+		by <strong>Eric T Freeman</strong>, <strong>Elisabeth Robson</strong>, <strong>Bert Bates</strong>, <strong>Kathy Sierra
+		</strong><br />
+		Published by O'Reilly Media, Inc. 2004<br />
+		Print ISBN-10: 0-596-00712-4<br />
+		Print ISBN-13: 978-0-596-00712-6<br /></p>
+
+	    <br clear="all" />
+	    <br />
+	    <br />
+
+		<h3>ATTENDANCE</h3>
+
+		<p>CSE 308 is a different sort of a class in two regards. 1) Because your primary grade is your team project, students are heavily dependent on the performance of their teammates in the project, and so they depend on their teammates being familiar with the technologies, involved in the project development, and available for team discussions. 2) As the semester progresses there will be very few straight lectures. Lecture time will in fact become an opportunity for teams to meet and make decisions as well as get instructor feedback. In fact, teams will have at least a brief meeting every single lecture. So, <strong>attendance is mandatory</strong>. Just as in the real world, attendance will be taken for every single meeting. Students who miss more than 3 lectures over the course of the semester will incur a grade penalty, with every absence thereafter increasing the penalty. In the real world there is an expectation of professionalism and this starts with being in attendance for all meetings.<br /><br /></p>
+
+
+		<h3>COURSE COMPONENTS</h3>
+		<ul>
+		    <li><strong>Team Building Exercise</strong> - At the start of the semester students will be divided up into teams and asked to solve a programming problem as a team. It will require learning new technologies and assigning work. Team members will be assigned grades based on the contributions they made to the finished product.<br /><br /></li>
+
+		    <li><strong>Midterm Exam</strong> - This exam will test each student's understanding of the core course concepts as well as the technologies used for the project.<br /><br /></li>
+
+		    <li><strong>Group Project</strong> - Students will work in teams of four to create a full fledged Web application. The expectations for this app is that it is great. It should be look professionally designed and operate as intended (i.e. bug free). There will be a number of components to this project:<br /><br />
+			<ul>
+                            <li><strong>Grant Proposal</strong> - This semester teams will write a grant proposal as though they are applying for funding in response to an RFP. This is something one might do in academia as a professor or researcher.<br /><br /></li>
+			    <li><strong>Requirements Specification Documentation &amp; Presentation</strong> - Student teams will reveal their vision for the assigned Web app assignment in a 30 minute presentation and will submit formal Requirements Analysis documentation that will include formal UML Use Case diagrams and front-end mockups. Note that teams are expected to bring their own creativity to the project and are encouraged to think outside the box.<br /><br /></li>
+			    <li><strong>Software Design Documents</strong> - Student teams will use UML to specify their project design using the aforementioned technologies. This will include both front-end and back-end components. These designs will then be presented to the instructor in 1 hour presentations where they will be meticulously reviewed.<br /><br /></li>
+
+		    <li><strong>Progress Reviews</strong> - Part of Software Engineering is developing a plan of action for development. Teams will do this by creating their own development schedule, and then, with the use of Project Management Software, will monitor and update progress towards their project's completion. Teams will receive grades based on completion of project targets and through these progress reviews, will receive valuable feedback regarding their site's look, feel, interactivity, services, etc. Note that for each of these weekly reviews, teams will be asked to present their progress to the TA by appointment and the instructor in class.<br /><br /></li>
+
+		    <li><strong>Completed Deliverables &amp; Final Presentation</strong> - At the end of the semester each team will deploy their completed project and present their work to an audience so as to showcase their application. Think of it as a trial run for the <a href="http://www.meetup.com/ny-tech/">New York Tech Meetup</a>, which is a monthly New York event where start-ups make a case to venture capitalists to fund their projects.<br /><br /></li>
+			</ul></li>
+		</ul>
+
+		<h3>GRADING BREAKDOWN</h3>
+
+		<table>
+		    <tr>
+			<td>Team Building Exercise</td>
+			<td align="right">10 %</td>
+		    </tr>
+		    <tr>
+			<td>Midterm Exam</td>
+			<td align="right">30 %</td>
+		    </tr>
+		    <tr>
+			<td>Group Project</td>
+			<td align="right">60 %</td>
+		    </tr>
+		    <tr style="background-color:rgb(0,255,255)">
+			<td></td>
+			<td align="right">100 %</td>
+		    </tr>
+		</table>
+
+		<p><strong>Note CEAS Policy:</strong> The Pass/No Credit (P/NC) option is not available for this course.<br /><br /></p>
+
+
+		<h3>ACADEMIC DISHONESTY</h3>
+
+		<blockquote><b>Read This!</b> You may <em>discuss</em> the homework in this course with anyone you like, however each student's submission, including <em>written material</em> and <em>coding</em>, must be his or her own work, and only his or her own work. Any evidence that written homework submissions or source code have been copied, shared, or transmitted <em>in any way</em> between students (this includes using source code downloaded from the Internet or written by others in previous semesters!) will be regarded as evidence of academic dishonesty. Additionally, any evidence of sharing of information or using unauthorized information during an examination will also be regarded as evidence of academic dishonesty.
+		    <br /><br />
+		    The College of Engineering and Applied Sciences regards academic dishonesty as a very serious matter, and provides for substantial penalties in such cases, such as receiving an `F' grade, or expulsion from the University. For more information, obtain a copy of the CEAS guidelines on academic dishonesty from the CEAS office.
+		    <br /><br />
+		    <strong>Be advised that any evidence of academic dishonesty will be treated with utmost seriousness. Those involved will be prosecuted to the fullest extent permitted by the University and College laws. If you have a situation that may tempt you into doing something academically dishonest, resist the urge and speak with your instructor during office hours for help.</strong><br /><br /></blockquote>
+
+
+		<h3>SPECIAL ASSISTANCE</h3>
+
+		<p>If you have a physical, psychological, medical or learning disability that may impact on your ability to carry out assigned course work, I would urge that you contact the staff in the Disabled Student Services office (DSS) in the ECC building (where the Computer Store used to be), 632-6748v/tdD. DSS will review your concerns and determine with you what accommodations are necessary and appropriate. All information and documentation of disability are confidential.</p>
+
+		<p>If you need general computer help, you can use the Computer Science Help Desk. Services offered include setting up an account on a department server, using Windows NT, using a browser, and connecting to the campus network. The Help Desk office is located in the SBCS Office - Room 2110.<br /><br /></p>
+
+                <div id="footers">
+                </div>
+
+
+		    <br>
+		    <br>
+		    <br>
+		    <br>
+
+
+	    </div>
+
+	</div>
+
+
+    </body>
+
+</html>

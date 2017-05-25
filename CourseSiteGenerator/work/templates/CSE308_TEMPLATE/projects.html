@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="CSE 308 - Software Engineering - Spring 2017 Home Page" />
+	<title>temp</title>
+	<link rel="stylesheet" type="text/css" href="./css/course_homepage_layout.css" />
+	<link rel="stylesheet" type="text/css" href="./css/sea_wolf.css" />
+	<style>
+	    span.student_info
+	    {
+		color:black;
+		font-size:11pt;
+		font-weight:bold;
+	    }
+	    span.course_list
+	    {
+		color:black;
+		font-size:10pt;
+		font-weight:bold,italic;
+	    }
+	</style>
+
+	<!-- LINK TO OUR JavaScript FILE AND JQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="./js/BannerBuilder.js"></script>
+        <script src="./js/FooterBuilder.js"></script>
+        <script src="./js/TeamsBuilder.js"></script>
+
+	<!-- ONCE THE PAGE FULLY LOADS INITIALIZE THE SLIDESHOW -->
+        <script>
+            $(document).ready()
+            {
+                initTeamsAndStudents();
+            }
+        </script>
+    </head>
+
+    <body>
+
+	<div id="content">
+
+	    <div id="navbar">
+		
+	    </div>
+
+	    <div id="banner"></div>
+
+	    <div id="desc">
+
+		<h3 id="teams">Teams</h3>
+
+		<div id="teams_tables">
+		    <!-- JavaScript WILL FILL THIS IN WITH DATA
+			PULLED FROM A JSon FILE -->
+		</div>
+		<br /><br />
+
+		<br clear="all" />
+
+		<hr />
+                <div id="footers">
+                </div>
+		<br /><br /><br /><br />
+	    </div>
+	</div>
+    </body>
+</html>

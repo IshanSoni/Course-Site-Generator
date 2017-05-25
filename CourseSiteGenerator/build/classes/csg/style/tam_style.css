@@ -1,0 +1,212 @@
+/* 
+    This style sheet stylizes the controls inside our
+    TA Manager JavaFX application. Note that controls
+    in the UI must have the same class as those below in 
+    order to be rendered using those properties.
+
+    Note that it may seem overwhelming to see so many different
+    style classes, even though our application doesn't have that
+    many controls, but what this allows us to do is easily
+    control and update the style of the entire user interface
+    via a stylesheet without having the change Java code.
+
+    Author:	Richard McKenna
+    Version:	1.0
+*/
+.root{
+    -fx-font-family: "Courier New";
+    -fx-border-width: 2px;
+    -fx-border-color: #d4d4db;   
+}
+
+.workspace_box {
+    -fx-border-width: 0px 3px 3px 3px;
+    -fx-border-color: black;
+}
+
+.tab {
+    -fx-border-width: 2px 2px 0px 2px;
+    -fx-border-color: black; 
+}
+
+.tab_content {
+    -fx-border-width: 2px 3px 3px 3px;
+    -fx-border-color: black; 
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #737377;
+}
+
+.tabpane {
+    -fx-border-width: 4px;
+    -fx-border-color: #737377;   
+}
+
+.dialog_pane {
+    -fx-padding:15;
+}
+
+.dialog_heading {
+    -fx-font-size: 24pt;
+    -fx-background-color: bisque;
+    -fx-color:red;
+}
+
+.dialog_prompt {
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+.plain_pane{
+    
+}
+
+.bordered_pane {
+    -fx-background-color: #737377;
+    -fx-background-radius: 5.0;
+    -fx-padding: 6;
+    -fx-spacing: 10;
+    -fx-border-width: 3px;
+    -fx-border-color: black;
+}
+
+.header_pane{
+    -fx-min-width: 35;
+    -fx-min-height: 35;
+}
+
+.header_label {
+    -fx-font-size: 13pt;
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+}
+
+.smaller_header_label {
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+}
+
+.bottom_border_separation {
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #737377;
+}
+
+.bottom_padding {
+    -fx-padding : 0 0 50 0;
+}
+
+.side_border_separation {
+    -fx-padding: 0 0 0 -5;
+    -fx-border-width: 0px 0px 0px 1px;
+    -fx-border-color: #737377;
+}
+
+.gridtime_header_label {
+    -fx-font-size:10pt;
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+}
+
+.gridtime_combobox {
+    -fx-pref-width: 95;   
+}
+
+.gridtime_hbox {
+    -fx-padding: 3;
+}
+
+.ta_table{
+   
+}
+
+.table_center {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header.ta_table_column_header .label {
+    -fx-text-fill:white;
+    -fx-background-color:black;
+}
+
+.add_ta_pane{
+    -fx-padding: 5 10 5 10;
+}
+
+.add_ta_text_field{
+    -fx-font-size: 10pt;
+}
+
+.add_ta_button{
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+   -fx-border-radius: 10 10 10 10;
+   -fx-background-radius: 10 10 10 10;    
+}
+
+.office_hours_grid{
+    
+}
+
+.office_hours_grid_time_column_header_pane{
+    -fx-background-color:black;
+    -fx-border: 1px;   
+    -fx-min-width: 28;
+    -fx-min-height: 28;
+}
+
+.office_hours_grid_time_column_header_label{
+    -fx-text-fill:white;
+    -fx-font-size:9pt;   
+    -fx-font-weight:bold;
+    -fx-padding: 5;
+}
+
+.office_hours_grid_day_column_header_pane{
+    -fx-background-color:black;
+    -fx-border: 1px;
+    
+    -fx-min-width: 28;
+    -fx-min-height: 28;
+}
+
+.office_hours_grid_day_column_header_label{
+    -fx-text-fill:white;
+    -fx-font-size:9pt;   
+    -fx-font-weight:bold;
+    -fx-padding: 5;
+}
+
+.office_hours_grid_time_cell_pane{
+    -fx-background-color:#737377; 
+    -fx-border: 1px;   
+    -fx-border-color:black;
+}
+
+.office_hours_grid_time_cell_label{
+    -fx-font-size:9pt;
+    -fx-text-fill:white;
+}
+
+.office_hours_grid_ta_cell_pane{
+    -fx-background-color:#d4d4db;
+    -fx-border: 1px;
+    -fx-border-color: black;
+}
+
+.office_hours_grid_ta_cell_label{
+    -fx-font-weight:bold;
+    -fx-font-size:9pt;  
+    -fx-padding: 5;
+}
+
+.highlighted_grid_cell {
+    -fx-background-color: #737377;
+    -fx-border: 1px;
+}
+
+.highlighted_grid_row_or_column {
+    -fx-background-color: rgba(115,115,119,0.5);
+}

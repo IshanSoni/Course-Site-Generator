@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>temp</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link href="./css/course_homepage_layout.css" rel="stylesheet" type="text/css">
+	<link href="./css/sea_wolf.css" rel="stylesheet" type="text/css">
+
+        <!-- LINK TO OUR JavaScript FILE AND JQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="./js/BannerBuilder.js"></script>
+        <script src="./js/FooterBuilder.js"></script>
+        <script src="./js/HWsBuilder.js"></script>
+
+	<!-- ONCE THE PAGE FULLY LOADS INITIALIZE THE SLIDESHOW -->
+        <script>
+	    $(document).ready()
+	    {
+                initHWs();
+	    }
+        </script>
+    </head>
+
+    <body>
+	<div id="content">
+	    <div id="navbar">
+                <!-- NAVIGATION LINKS GO HERE -->
+	    </div>
+
+	    <div id="banner"></div>
+
+      <div id="desc">
+		<h3>Homework Assignments</h3>
+
+		<p>Note that the grading criteria for all homework assignments will be posted here along with links to homework instructions.</p>
+
+		<table class="hws">
+                    <tbody id="hws">
+                        <tr class="hws" style="background-color:rgb(235,215,215)">
+                            <th class="hws">Homework</th>
+                            <th class="hws">Due Date</th>
+                            <th class="hws">Grading Criteria</th>
+                        </tr>
+
+                        <!-- THIS WILL BE FILLED IN BY JAVASCRIPT -->
+                    </tbody>
+                </table>
+		<br />
+		<hr />
+
+                <div id="footers">
+
+                </div>
+		    <br />
+		    <br />
+		    <br />
+		    <br />
+	    </div>
+	</div>
+    </body>
+</html>

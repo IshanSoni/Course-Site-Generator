@@ -1,0 +1,157 @@
+
+{
+    "course_info":{
+        "subject":"TEST",
+        "number":102,
+        "semester":"Autumn",
+        "year":2017,
+        "title":"Testology 2",
+        "instructor_name":"Mr. Tester",
+        "instructor_home":"www.mrtester.com",
+        "export_dir":"Users/isoni/Desktop"
+    },
+    "site_template":{
+        "template_dir":"Users/isoni1/Desktop1",
+        "pages":[
+            {
+                "use":true,
+                "navbar_title":"Home"
+            },
+            {
+                "use":false,
+                "navbar_title":"Syllabus"
+            },
+            {
+                "use":true,
+                "navbar_title":"Schedule"
+            },
+            {
+                "use":false,
+                "navbar_title":"Hws"
+            },
+            {
+                "use":true,
+                "navbar_title":"Projects"
+            }
+        ]
+    },
+    "page_style":{
+        "banner_img_dir":"http://xiostorage.com/wp-content/uploads/2015/10/test.png",
+        "left_footer_img_dir":"http://xiostorage.com/wp-content/uploads/2015/10/test.png",
+        "right_footer_img_dir":"http://xiostorage.com/wp-content/uploads/2015/10/test.png",
+        "stylesheet":"test.css"
+    },
+    "startHour":"10",
+    "endHour":"11",
+    "undergrad_tas":[
+        {
+            "name":"Test TA 1",
+            "email":"testta1@test1.com"
+        }
+    ],
+    "grad_tas":[
+        {
+            "name":"Test TA 2",
+            "email":"testta2@test2.com"
+        }
+    ],
+    "officeHours":[
+    ],
+    "recitations_tab":[
+    ],
+    "startingMondayMonth":1,
+    "startingMondayDay":2,
+    "endingFridayMonth":1,
+    "endingFridayDay":20,
+    "holidays":[
+        {
+            "month":1,
+            "day":5,
+            "title":"Schedule1 Title",
+            "topic":"Schedule1 Topic",
+            "link":"www.schedule1-link.com",
+            "time":"1:00pm",
+            "criteria":"www.schedule1-criteria.com"
+        }
+    ],
+    "lectures":[
+        {
+            "month":1,
+            "day":6,
+            "title":"Schedule2 Title",
+            "topic":"Schedule2 Topic",
+            "link":"www.schedule2-link.com",
+            "time":"2:00pm",
+            "criteria":"www.schedule2-criteria.com"
+        }
+    ],
+    "references":[
+        {
+            "month":1,
+            "day":9,
+            "title":"Schedule3 Title",
+            "topic":"Schedule3 Topic",
+            "link":"www.schedule3-link.com",
+            "time":"3:00pm",
+            "criteria":"www.schedule3-criteria.com"
+        }
+    ],
+    "recitations":[
+        {
+            "month":1,
+            "day":10,
+            "title":"Schedule4 Title",
+            "topic":"Schedule4 Topic",
+            "link":"www.schedule4-link.com",
+            "time":"4:00pm",
+            "criteria":"www.schedule4-criteria.com"
+        }
+    ],
+    "hws":[
+        {
+            "month":1,
+            "day":11,
+            "title":"Schedule5 Title",
+            "topic":"Schedule5 Topic",
+            "link":"www.schedule5-link.com",
+            "time":"5:00pm",
+            "criteria":"www.schedule5-criteria.com"
+        }
+    ],
+    "teams":[
+        {
+            "name":"Team Name 1",
+            "red":127,
+            "green":240,
+            "blue":0,
+            "text_red":0,
+            "text_green":0,
+            "text_blue":0,
+            "link":"www.team1-link.com"
+        },
+        {
+            "name":"Team Name 2",
+            "red":127,
+            "green":255,
+            "blue":212,
+            "text_red":255,
+            "text_green":255,
+            "text_blue":255,
+            "link":"www.team2-link.com"
+        }
+    ],
+    "students":[
+        {
+            "firstName":"first name 1",
+            "lastName":"last name 1",
+            "team":"Team Name 1",
+            "role":"student role 1"
+        },
+        {
+            "firstName":"first name 2",
+            "lastName":"last name 2",
+            "team":"Team Name 2",
+            "role":"student role 2"
+        }
+    ]
+}
